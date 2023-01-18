@@ -11,7 +11,13 @@
   },
   "dependencies": {
     "react": "18.1.0",
-    "react-native": "0.70.6"
+    "react-native": "0.70.6",
+    "react-native-device-info": "^10.3.0",
+    "react-native-exit-app": "^1.1.0",
+    "react-native-loading-spinner-overlay": "^3.0.1",
+    "react-native-permissions": "^3.6.1",
+    "react-native-shared-group-preferences": "^1.1.23",
+    "react-native-webview": "^11.26.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
