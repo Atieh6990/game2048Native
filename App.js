@@ -141,15 +141,6 @@ const App = () => {
       }
     };
 
-    const playVideo = (data) => {
-      // alert(data);
-      // alert("play video -> " + data.video);
-      // alert("play poster -> " + data.poster);
-      setPlayerUrl(data.video);
-      setPosterUrl(data.poster);
-      setVideoShow(true);
-    };
-
     const loadAppData = () => {
 
       let sendData = {
