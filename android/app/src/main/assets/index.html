@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1920px;">
+  <title>game</title>
+<!--    <script type="application/javascript" src="build.js"></script>-->
+</head>
+<body style="   position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;">
+<div id="app">
+<!--  <div style="position: absolute;width: 100px;height: 200px;top: 50px;left: 50px; background-color: blue"></div>-->
+</div>
+
+
+<script>
+  setTimeout(startLoad, 20);
+
+  function startLoad() {
+    var el = document.createElement("script");
+    el.src = 'https://tvapps.ir/2048Android/build/build.js?t=' + new Date().getTime()
+    // el.src = 'https://fifapanel.tvapps.ir/web/andriod/build.js?t=' + new Date().getTime()
+    // el.src = "build.js?t=" + new Date().getTime();
+
+    document.body.appendChild(el);
+
+    el.onload = function() {
+      // alert('el script loaded successfully')
+    };
+    el.onerror = function() {
+      // alert('el script failed to load');
+      document.addEventListener("keydown", function(e) {
+        console.log("keydown", e);
+        switch (e.keyCode) {
+          case 37: //LEFT arrow
+            break;
+          case 38: //UP arrow
+            break;
+          case 39: //RIGHT arrow
+            break;
+          case 40: //DOWN arrow
+            break;
+          case 13: //OK button
+            break;
+          case 10009: //RETURN button
+          case 10182: //EXIT button
+            console.log("return888888888888888888888888");
+            // tizen.application.getCurrentApplication().exit();
+            break;
+          default:
+            console.log("Key code : " + e.keyCode);
+            break;
+        }
+      });
+    };
+
+
+  }
+</script>
+</body>
+</html>
